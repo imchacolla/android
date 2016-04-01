@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LAB06</string>
+    <string name="llamar_activity">LLamar activity</string>
+    <string name="llamar_explorador">LLamar Explorador</string>
+    <string name="llamar_ref_geo">Llamar Ref. Geo</string>
+    <string name="llamar_celular">Llamar Celular</string>
+</resources>

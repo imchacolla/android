@@ -34,11 +34,12 @@ public class SumaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        etxNumero1 =(EditText) container.findViewById(R.id.etxNumero1);
-        etxNumero2 =(EditText) container.findViewById(R.id.etxNumero2);
-        btnCalcular = (Button) container.findViewById(R.id.btnSumar);
-        txvResultadoSuma= (TextView) container.findViewById(R.id.txvResultadoSuma);
-/*
+        View viewContainer = inflater.inflate(R.layout.fragment_blank, container, false);
+        etxNumero1 =(EditText) viewContainer.findViewById(R.id.etxNumero1);
+        etxNumero2 =(EditText) viewContainer.findViewById(R.id.etxNumero2);
+        btnCalcular = (Button) viewContainer.findViewById(R.id.btnSumar);
+        txvResultadoSuma= (TextView) viewContainer.findViewById(R.id.txvResultadoSuma);
+
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,8 +48,9 @@ public class SumaFragment extends Fragment {
                 txvResultadoSuma.setText("La resta es: "+(num1-num2));
             }
         });
-*/
-        return inflater.inflate(R.layout.fragment_suma, container, false);
+
+
+        return viewContainer;
     }
 
 }
